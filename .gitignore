@@ -1,3 +1,5 @@
 *.sql
+!DDLuniversidade.sql
+!DMLuniversidade.sql 
 c.txt
-*xlsx
+*.xlsx
