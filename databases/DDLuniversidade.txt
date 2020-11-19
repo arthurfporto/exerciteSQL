@@ -1,5 +1,3 @@
-/* Lógico_1: */
-
 CREATE TABLE PROFESSOR (
     professorMatricula VARCHAR(16) PRIMARY KEY,
     professorNome VARCHAR(64),
