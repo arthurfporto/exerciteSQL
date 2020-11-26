@@ -2,11 +2,7 @@ CREATE TABLE PROFESSOR (
     professorMatricula VARCHAR(16) PRIMARY KEY,
     professorNome VARCHAR(64),
     professorTitulo VARCHAR(32),
-    professorRank VARCHAR(16),
-    FK_DEPARTAMENTO_departamentoCodigo VARCHAR(16),
-    FOREIGN KEY (FK_DEPARTAMENTO_departamentoCodigo)
-    REFERENCES DEPARTAMENTO (departamentoCodigo)
-    ON DELETE NO ACTION ON UPDATE CASCADE
+    professorRank VARCHAR(16)
 );
 
 CREATE TABLE PROJETO (
@@ -37,7 +33,11 @@ CREATE TABLE ESTUDANTE (
 CREATE TABLE DEPARTAMENTO (
     departamentoCodigo VARCHAR(16) PRIMARY KEY,
     departamentoNome VARCHAR(64) UNIQUE,
-    departamentoSalaNumero INTEGER UNIQUE
+    departamentoSalaNumero INTEGER UNIQUE,
+    FK_PROFESSOR_professorMatricula VARCHAR(16) UNIQUE,
+    FOREIGN KEY (FK_PROFESSOR_professorMatricula)
+    REFERENCES PROFESSOR (professorMatricula)
+    ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
 CREATE TABLE AREA_PESQUISA (
