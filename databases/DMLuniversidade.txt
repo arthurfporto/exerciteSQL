@@ -1,8 +1,3 @@
-INSERT INTO DEPARTAMENTO VALUES 
-('d001',	'Exatas'	    , 1203,'p023'),
-('d002',	'Humanas'	    , 1220,'p0234'),
-('d005',	'Computação'	, 1271,'p025'),
-('d009',	'Biológicas'	, 1339,'p037');
 
 INSERT INTO PROFESSOR VALUES
 ('p07632',	'Diego Vasques Negreiros'	      ,'Doutor'	      ,'A1'),
@@ -43,24 +38,11 @@ INSERT INTO PROJETO VALUES
 (1279,	'Projeto Computação estatística'           	,'2018-10-23',	'2021-07-18',	7850.91	  ,'p06736'),
 (1310,	'Projeto Computação e natureza'            	,'2017-08-18',	'2020-05-13',	18318.8	  ,'p0736');
 
-INSERT INTO AREA_PESQUISA VALUES
-('Álgebra'),
-('Matemática Aplicada'),
-('Teoria da Computação'),
-('Matemática da Computação'),
-('Metodologia e Técnicas da Computação'),
-('Sistemas de Computação'),
-('Genética Quantitativa'),
-('Genética Humana e Médica'),
-('Mutagênese'),
-('Epidemiologia'),
-('Saúde Pública'),
-('Medicina Preventiva'),
-('Componentes da Dinâmica Demográfica'),
-('Política Pública e População'),
-('Fontes de Dados Demográficos'),
-('Teoria e Filosofia da História'),
-('História do Brasil');
+INSERT INTO DEPARTAMENTO VALUES 
+('d001',	'Exatas'	    , 1203,'p023'),
+('d002',	'Humanas'	    , 1220,'p0234'),
+('d005',	'Computação'	, 1271,'p025'),
+('d009',	'Biológicas'	, 1339,'p037');
 
 INSERT INTO CURSO VALUES
 ('c032',	  'Ciências Contábeis', 'Graduação'		            ,'d001'),
@@ -135,6 +117,25 @@ INSERT INTO ESTUDANTE VALUES
 ('a01171',	'Katie Lucas Madureira'	        	,'c10' 	  ,NULL),
 ('a01172',	'Mateo Flores Bicalho'	        	,'c10'	  ,NULL),
 ('a01173',	'Elisama Torquato Garrau'	        ,'c10' 	  ,NULL);
+
+INSERT INTO AREA_PESQUISA VALUES
+('Álgebra'),
+('Matemática Aplicada'),
+('Teoria da Computação'),
+('Matemática da Computação'),
+('Metodologia e Técnicas da Computação'),
+('Sistemas de Computação'),
+('Genética Quantitativa'),
+('Genética Humana e Médica'),
+('Mutagênese'),
+('Epidemiologia'),
+('Saúde Pública'),
+('Medicina Preventiva'),
+('Componentes da Dinâmica Demográfica'),
+('Política Pública e População'),
+('Fontes de Dados Demográficos'),
+('Teoria e Filosofia da História'),
+('História do Brasil');
 
 INSERT INTO PROFESSOR_AUXILIA VALUES
 ('p023',	938),
@@ -248,45 +249,6 @@ INSERT INTO PROFESSOR_DEPARTAMENTO VALUES
 ('d009',	'p0967'	,3.5);
 
 
-INSERT INTO ESTUDANTE_PROJETO VALUES
-(876	,'a00668'),
-(876	,'a00669'),
-(907	,'a00670'),
-(938	,'a00671'),
-(969	,'a00672'),
-(1000	,'a00673'),
-(1031	,'a01164'),
-(1062	,'a01165'),
-(1093	,'a01166'),
-(1124	,'a01167'),
-(1155	,'a01168'),
-(1186	,'a01169'),
-(1217	,'a01170'),
-(1248	,'a01171'),
-(1279	,'a01172'),
-(1310	,'a01173'),
-(1186	,'a00324'),
-(1217	,'a00325'),
-(1248	,'a00326'),
-(1279	,'a00327'),
-(1310	,'a00328'),
-(876	,'a00329'),
-(907	,'a00330'),
-(938	,'a02341'),
-(969	,'a02342'),
-(1000	,'a02343'),
-(1031	,'a02344'),
-(1062	,'a02345'),
-(1093	,'a02346'),
-(1124	,'a02347'),
-(1155	,'a02348'),
-(1186	,'a02349'),
-(1217	,'a02350'),
-(1248	,'a02351'),
-(1279	,'a02352'),
-(1310	,'a00653');
-
-
 INSERT INTO PROFESSOR_AREA VALUES
 ('p07632'	,'Álgebra'),
 ('p04567'	,'Matemática Aplicada'),
@@ -348,3 +310,43 @@ INSERT INTO PROFESSOR_AREA VALUES
 ('p0796'	,'Genética Quantitativa'),
 ('p0967'	,'Genética Humana e Médica'),
 ('p0798'	,'Mutagênese');
+
+
+INSERT INTO ESTUDANTE_PROJETO VALUES
+(876	,'a00668'),
+(876	,'a00669'),
+(907	,'a00670'),
+(938	,'a00671'),
+(969	,'a00672'),
+(1000	,'a00673'),
+(1031	,'a01164'),
+(1062	,'a01165'),
+(1093	,'a01166'),
+(1124	,'a01167'),
+(1155	,'a01168'),
+(1186	,'a01169'),
+(1217	,'a01170'),
+(1248	,'a01171'),
+(1279	,'a01172'),
+(1310	,'a01173'),
+(1186	,'a00324'),
+(1217	,'a00325'),
+(1248	,'a00326'),
+(1279	,'a00327'),
+(1310	,'a00328'),
+(876	,'a00329'),
+(907	,'a00330'),
+(938	,'a02341'),
+(969	,'a02342'),
+(1000	,'a02343'),
+(1031	,'a02344'),
+(1062	,'a02345'),
+(1093	,'a02346'),
+(1124	,'a02347'),
+(1155	,'a02348'),
+(1186	,'a02349'),
+(1217	,'a02350'),
+(1248	,'a02351'),
+(1279	,'a02352'),
+(1310	,'a00653');
+
